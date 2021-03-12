@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 LABEL maintainer="Sasha Gerrand <github+docker-glibc-builder@sgerrand.com>"
 ENV DEBIAN_FRONTEND=noninteractive \
-    GLIBC_VERSION=2.33 \
+    GLIBC_VERSION=2.31 \
     PREFIX_DIR=/usr/glibc-compat
 RUN apt-get -q update \
 	&& apt-get -qy install \
